@@ -1,0 +1,29 @@
+<div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Create Room</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+    <div class="modal-body">
+        <div class="d-flex flex-column">
+            <div class="container">
+                <div class="row mb-2">
+                    <div class="col">
+                    Room Name:
+                </div>
+                    <div class="col">
+                    <input [(ngModel)]="name" type="text">
+                </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col">
+                    Code:
+                </div>
+                    <div class="col">
+                    <input [(ngModel)]="code" type="text">
+                </div>
+                </div>
+            </div>
+        </div>
+    <button (click)="checkCode()" type="submit" class="btn btn-dark w-100">Check</button>
+    </div>

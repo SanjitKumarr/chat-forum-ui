@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+body { 
+    background-color: #756A64 !important;
+    height: 100vh;
+    opacity: 0.9;
+}
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap-icons/font/bootstrap-icons.css";
